@@ -5,22 +5,194 @@
     <meta name="viewport" content="width=width-device, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-        body{
-            background-color: aqua;
-            color: blueviolet;
-        }
+       *{
+	padding:0px;
+	margin: 0px;
+	box-sizing: border-box;
+	
+}
+
+body
+{
+	background-color: skyblue;	
+}
+	#heading
+	{
+       text-align: center;
+       padding-top: 50px;
+       text-decoration: underline;
+      	}
+
+.box{
+          width:90%;
+          height:700px;
+          background-color:white;
+          margin:50px 0px 0px 70px;
+    }
+ .box h2{
+ 	text-align: center;
+ 	padding-top: 30px;
+ 	font-size: 20px;
+ }
+
+/*.box .frm{
+	margin-left: 600px;
+}*/
+
+.box form input[type="txt"],[type="email"],[type="number"]{
+
+	margin-left: 10px;
+	border:1px solid grey;
+	border-radius: 5px;
+	width:300px;
+	height:30px;
+}
+.box form input[type="txt"]:hover
+{
+border-color:red;
+transition: 0.2s;
+}
+.box form input[type="email"]:hover
+{
+border-color:red;
+transition: 0.2s;
+}
+.box form input[type="number"]:hover
+{
+border-color:red;
+transition: 0.3s;
+}
+input[type="number"]{
+	margin-left: 20px;
+}
+.opt{
+	margin-left: 240px;
+	font-size: 18px;
+}
+select#slct{
+	margin-left: 10px;
+	border:1px solid grey;
+	border-radius: 5px;
+	width:100px;
+	height:30px;
+}
+::placeholder
+{
+	padding-left: 10px;
+}
+
+.sur{
+	margin-top: 20px;
+	line-height: 30px;
+}
+#rec{
+	margin-left: 50px;
+ }
+#recom1{
+	margin-left: 135px;
+}
+#recom2{
+	margin-left: 347px;
+}
+.fcc{
+	margin-left: 80px;
+}
+#sel{
+	margin-left: 30px;
+	margin-top: 40px;
+	width:130px;
+	height:30px;
+	border:1px solid grey;
+	border-radius:5px;
+}
+#sele{
+	font-size: 10px;
+	text-align: center;
+}
+footer{
+	margin-left: 280px;
+	margin-top: 40px;
+	font-size: 18px;
+	line-height: 30px;
+}
+#fu1{
+	margin-left: 20px;
+}
+span{
+	margin-left: 125px;
+}
+#fu2{
+	margin-left: 27px;
+}
+#fu3{
+	margin-left: 313px;
+}
+input[type="button"]{
+	margin-left:300px;
+	margin-top: 20px;
+	border:1px solid black;
+	width:100px;
+	height: 40px;
+	cursor: pointer;
+    }
+    .footer{
+        width: 100%;
+        height: 50px;
+        margin: 20px auto 20px auto;
+        background-color:slategray;
+        color: blueviolet;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 50px;
+    }
+       
     </style>
 
 </head>
 <body>
-    <div>
-       <center> <h1>First bootcamp class</h1></center>
-    </div>
+    <div id="heading"><h1>Survey Form</h1></div>
+	<div class="box">
+		<h2>Let us know how we can improve voting system in Pakistan</h2><br><br>
+		<center><form><div class="frm">
+		Name:
+			<input type="txt" name="name" id="name" placeholder="Enter Your Name"><br><br>
+			Email:
+			<input type="email" name="email" id="email" placeholder="Enter Your Email"><br><br>
+				Age:
+				<input type="number" name="age" id="age" placeholder="Age" min="18"><br><br></div></center>
+				<div class="opt">Which option best describes your current role?
+				<select id="slct">
+					<option>Student</option>
+					<option>Employee</option>
+				</select></div>
+				<div class="opt sur">
+                     How likely is that you would recommend<input type="radio" id="rec" name="recom">Definitely<br>&nbsp;&nbsp;&nbsp;freeCodeCamp to a friend?
+                     
+                     <input type="radio" id="recom1" name="recom">Maybe<br>
+                     <input type="radio" id="recom2" name="recom">Not sure<br>
+                     <div class="fcc">
+                     What do you like most in FCC?
+                     <select id="sel">
+                     	<option id="sele">Select an Option</option>
+                     	<option>ABC</option>
+                     	<option>ABC</option>
+                     </select></div>
+                     </div>
+                     <footer class="foot">
+                     Things that should be improved in future<input type="checkbox" id="fu1" name="fu">&nbsp;&nbsp;Front-end Projects<br>
+                     <span>(Check all that apply)</span>
+                     <input type="checkbox" id="fu2" name="fu">&nbsp;&nbsp;Back-end projects<br>
+                     <input type="checkbox" id="fu3" name="fu">&nbsp;&nbsp;Data Visulization
+                       </footer>
+                       <input type="button" value="submit" onclick="check()">
+                   </form>
+                   <div class="footer">
+                       <h3>
+                           created by iqra rehman
+                       </h3>
+                   </div>
+
+	</div>
 
 </body>
 </html>
